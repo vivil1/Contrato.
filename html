@@ -34,6 +34,21 @@
             bottom: 0;
             width: 100%;
         }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .agree-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .agree-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -42,17 +57,28 @@
     </header>
     <section>
         <h2>Termos do Contrato</h2>
-        <p>Eu,Vitória Lacerda, e Thiago Arend, concordamos com os seguintes termos e condições para o nosso relacionamento de namoro:</p>
+        <p>Eu, Vitória Lacerda, e Thiago Arend, concordamos com os seguintes termos e condições para o nosso relacionamento de namoro:</p>
         <ol>
-            <li>Comprometemo-nos a nos respeitar mutuamente.</li>
-            <li>Prometo te amar.</li>
-            <li>Prometemos ser honestos e abertos um com o outro.</li>
-            <li>Estamos comprometidos em nos apoiar e incentivar em nossos objetivos pessoais.</li>
-            <li>Com este contrato, quero que saiba, que por mais tenha meus defeitos, eles nunca serão maiores que o meu amor por você. Obrigada por todos os dias, os momentos que compartilhamos juntos. Eu te amo meu amor. </li>
-        </ol>
+
+       <li>Comprometo-me a te respeitar.</li>
+       <li>Prometo te amar.</li>
+       <li>Prometo a ser honesta(o) todos os dias com você.</li>
+       <li>Estou comprometida(o) em nos apoiar e incentivar em todos os seus objetivos.</li>
+       <li>Com este contrato, quero que saiba, que por mais tenha meus defeitos, eles nunca serão maiores que o meu amor por você. Obrigada por todos os dias, os momentos que compartilhamos juntos. Eu te amo meu amor. </li>         </ol>
+        <div class="button-container">
+            <button class="agree-button" onclick="concordar()">Concordo com os Termos</button>
+        </div>
+        <p id="status"></p>
     </section>
     <footer>
         <p>&copy; 2024 Contrato de Namoro</p>
     </footer>
+
+    <script>
+        function concordar() {
+            document.getElementById("status").innerText = "Você concordou com os termos do contrato.";
+            // Aqui você pode adicionar mais ações, como enviar os dados do acordo para um servidor ou redirecionar para outra página.
+        }
+    </script>
 </body>
 </html>
