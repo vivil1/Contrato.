@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Contrato de Namoro</title>
-    <style>
-    
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -21,10 +18,10 @@
             <li>Prometo te amar.</li>
             <li>Prometo ser honesto(a) todos os dias com você.</li>
             <li>Estou comprometido(a) em nos apoiar e incentivar em todos os seus objetivos.</li>
-            <li>Com este contrato, quero que saiba, que por mais tenha meus defeitos, eles nunca serão maiores que o meu amor por você. Obrigada por todos os dias, os momentos que compartilhamos juntos. Eu te amo meu amor.</li>
+            <li>Com este contrato, quero que saiba, que por mais que tenha meus defeitos, eles nunca serão maiores que o meu amor por você. Obrigada por todos os dias, os momentos que compartilhamos juntos. Eu te amo meu amor.</li>
         </ol>
         <div class="button-container">
-            <button class="agree-button" onclick="concordar()" aria-label="Concordo com os Termos">Concordo com os Termos</button>
+            <button class="agree-button" onclick="concordar()">Concordo com os Termos</button>
         </div>
         <p id="status"></p>
     </section>
@@ -35,8 +32,8 @@
     <script>
         function concordar() {
             document.getElementById("status").innerText = "Você concordou com os termos do contrato.";
-         
         }
+           
     </script>
 </body>
 </html>
